@@ -20,7 +20,7 @@ export function LoginForm() {
   const router = useRouter();
   const { post, useMutation } = useApi();
   const { mutate, error, isPending } = useMutation({
-    mutationFn: (data: any) => post('/auth/login', data),
+    mutationFn: (data: any) => post('/auth/sing_in', data),
   });
 
   const handleSubmit = async (data: any) => {
